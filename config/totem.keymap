@@ -287,7 +287,7 @@
 &kp F1           &kp F2           &kp F3            &kp F4             &kp F5                  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_CLR       &out OUT_TOG
 &kp F6           &kp F7           &kp F8            &kp F9             &kp F10                 &kp C_PREV    &kp C_PP        &kp C_NEXT        &kp C_VOL_UP     &kp C_MUTE
 &bootloader      &kp F11          &kp F12           &kp F13            &kp F14    &tog MACMODE &kp C_BRI_DN  &kp C_BRI_UP    &kp C_VOL_DN      &kp C_AC_BACK    &kp C_AC_FORWARD  &trans
-                                  &sys_reset        &trans             &trans                  &trans        &trans          &studio_unlock
+                                  &sys_reset        &trans             &trans                  &trans        &bootloader      &studio_unlock
             >;
         };
 
