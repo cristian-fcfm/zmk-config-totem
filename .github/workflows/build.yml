@@ -2,4 +2,6 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # IMPORTANTE: esta referencia (@v0.3) debe coincidir con la "revision"
+    # de config/west.yml. Si cambias una, cambia la otra.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3

@@ -1,6 +1,18 @@
+---
+# Objetivos de compilación. GitHub Actions genera un .uf2 por cada entrada.
+#
+# La mitad izquierda es la central (habla con el PC) -> ahí va ZMK Studio.
+# settings_reset es una imagen de rescate: borra emparejamientos BLE y
+# ajustes guardados. Flashéala cuando las mitades no se vean entre sí o
+# cuando hayas editado el keymap con Studio y quieras volver al archivo.
+#
+# Si pasas ZMK a main / v0.4+, cambia los tres "board:" por: xiao_ble//zmk
 include:
   - board: seeeduino_xiao_ble
     shield: totem_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: totem_right
-# there is no settingsreset (needed) for the XIAO
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
