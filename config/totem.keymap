@@ -57,6 +57,15 @@
     delay-ms = <0>;
 };
 
+/* Teclas de capa (&lt): "balanced" en vez del default "tap-preferred",
+ * para que la capa salte al pulsar+soltar otra tecla dentro del término
+ * (p.ej. mantener 31 y una F-key rápida) y no solo tras el timeout. */
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+};
+
 / {
     behaviors {
         /* Home-row mods "positional" (receta de la doc de ZMK / urob):
